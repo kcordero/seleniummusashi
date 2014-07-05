@@ -4,6 +4,7 @@ require current_directory + "/../test_helper"
 class DeletePM < MiniTest::Test
 
   include Common::AuthenticationHelper
+  include Common::UsersHelper
 
   def setup
     @test_data = Data.config.test_data
@@ -18,6 +19,12 @@ class DeletePM < MiniTest::Test
   end
   
   def test_login
-    login(@driver, "kimpa1", "123qweqa")
+    login(@driver, @test_data["user_pa"] + 1.to_s, @test_data["user_password"])
+    
+    for i in 1..10
+      delete_member(@driver, @test_data["user_mem"] + i.to_s)
+    end
+
+    logout(@driver)
   end
 end
