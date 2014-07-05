@@ -1,9 +1,9 @@
 current_directory = File.expand_path(File.dirname(__FILE__))
 require current_directory + "/../test_helper"
 
-class XXXXXX < Test::Unit::TestCase
+class DeletePM < MiniTest::Test
 
-  include Common::XXXXXX
+  include Common::AuthenticationHelper
 
   def setup
     @test_data = Data.config.test_data
@@ -17,7 +17,7 @@ class XXXXXX < Test::Unit::TestCase
     @driver.quit
   end
   
-  def XXXXXX
-  
+  def test_login
+    login(@driver, "kimpa1", "123qweqa")
   end
 end

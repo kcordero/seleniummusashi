@@ -1,8 +1,5 @@
 module Common
-  module XXXXX
-    
-  def XXXX(browser, XXXX)
-  end
+  module SecgroupHelper
 
   end
 end

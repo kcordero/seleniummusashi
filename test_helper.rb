@@ -1,8 +1,11 @@
-current_directory = File.expand_path(File.dirname(__FILE__))
+current_directory = File.expand_path(File.dirname(__FILE__) )
+
 require "rubygems"
-require "test/unit"
+# require "test/unit"
+require 'minitest'
+require "minitest/autorun"
 require "selenium-webdriver"
-Dir[current_directory + "/common/*.rb"].each {|ruby| require ruby }
+Dir[current_directory + "/helpers/*.rb"].each {|ruby| require ruby }
 require "yaml"
 
 class Data
@@ -21,7 +24,7 @@ class Data
     
     def yaml(name)
       current_directory = File.expand_path(File.dirname(__FILE__))
-      YAML::load_file(current_directory + "/common/config/#{name}.yml")
+      YAML::load_file(current_directory + "/helpers/config/#{name}.yml")
     end
   end
 
