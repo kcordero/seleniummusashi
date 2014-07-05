@@ -8,6 +8,7 @@ user_pa: "pa"
 user_admin: "admin"
 user_emailusername: "qa_musashi"
 user_emaildomain: "@musashi.ph"
+user_password: "12345678"
 
 res_instance: "inst"
 res_snapshot: "instsnap"
