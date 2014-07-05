@@ -2,3 +2,14 @@
 def_admin_user: "admin"
 def_admin_pass: "klnm12"
 def_admin_email: "admin@musashi.com"
+
+user_mem: "mem"
+user_pa: "pa"
+user_admin: "admin"
+user_emailusername: "qa_musashi"
+user_emaildomain: "@musashi.ph"
+
+res_instance: "inst"
+res_snapshot: "instsnap"
+res_secgroup: "secgroup"
+res_keypair: "keypair"
