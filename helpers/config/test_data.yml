@@ -9,8 +9,13 @@ user_admin: "admin"
 user_emailusername: "qa_musashi"
 user_emaildomain: "@musashi.ph"
 user_password: "12345678"
+user_project: "proj"
 
 res_instance: "inst"
 res_snapshot: "instsnap"
 res_secgroup: "secgroup"
 res_keypair: "keypair"
+res_volume: "vol"
+
+common_description: "test"
+
