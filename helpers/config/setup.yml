@@ -1,0 +1,4 @@
+# environment to test
+envi : ""
+
+test_browser : "firefox"

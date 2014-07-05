@@ -1,0 +1,4 @@
+# default admin account
+def_admin_user: "admin"
+def_admin_pass: "klnm12"
+def_admin_email: "admin@musashi.com"
